@@ -77,6 +77,7 @@ sed -i '/-Xlog:gc/ s/^/# /' $FOLDER/config/jvm.options
 
 echo "Adding options to opensearch.yml"
 echo "
+discovery.type: single-node
 cluster.routing.allocation.disk.threshold_enabled: true
 cluster.routing.allocation.disk.watermark.flood_stage: 1gb
 cluster.routing.allocation.disk.watermark.high: 2gb
