@@ -1,4 +1,4 @@
-def opensearch_version = '2.17.1'
+def opensearch_version = '2.18.0'
 
 pipeline {
   agent any
