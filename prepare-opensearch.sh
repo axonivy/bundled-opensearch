@@ -40,6 +40,7 @@ unzip $ZIP_FILE \
   -x "*/opensearch-windows-install.bat" \
   -x "*/manifest.yml" \
   -x "*/NOTICE.txt" \
+  -x "*/README.md" \
   -x "*/LICENSE.txt" \
   -x "*/jdk/*" \
   -x "*/lib/tools/*" \
@@ -51,13 +52,17 @@ unzip $ZIP_FILE \
   -x "*/modules/repository-url/*" \
   -x "*/modules/reindex/*" \
   -x "*/modules/search-pipeline-common/*" \
+  -x "*/modules/transport-grpc/*" \
   -x "*/modules/geo/*" \
+  -x "*/modules/opensearch-dashboards/*" \
   -x "*/modules/mapper-extras/*" \
   -x "*/config/opensearch-notifications/*" \
   -x "*/config/opensearch-notifications-core/*" \
   -x "*/config/opensearch-observability/*" \
   -x "*/config/opensearch-security/*" \
+  -x "*/config/opensearch-security-analytics/*" \
   -x "*/config/opensearch-reports-scheduler/*" \
+  -x "*/config/fips_java.security" \
   -x "*/bin/opensearch-plugin*" \
   -x "*/bin/opensearch-node*" \
   -x "*/bin/opensearch-service*" \
@@ -65,6 +70,8 @@ unzip $ZIP_FILE \
   -x "*/bin/opensearch-shard*" \
   -x "*/bin/opensearch-keystore*" \
   -x "*/bin/opensearch-cli*" \
+  -x "*/bin/opensearch-windows*" \
+  -x "*/bin/opensearch-fips*" \
 
 echo "Make launcher executable"
 chmod +x $FOLDER/bin/opensearch
